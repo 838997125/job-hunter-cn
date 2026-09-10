@@ -1,0 +1,46 @@
+# 浏览器数据（登录态，不上传）
+data/browser_profile/
+
+# 配置文件（包含API Key和敏感数据）
+data/user_config.json
+!data/user_config.json.example
+
+# Python缓存
+__pycache__/
+scripts/__pycache__/
+scripts/utils/__pycache__/
+
+# 截图/临时文件
+*.png
+*.html
+*.log
+*.txt
+
+# PDF简历（实际内容不公开）
+data/resumes/*.pdf
+data/resumes/*.html
+data/resumes/*.md
+
+# 临时测试文件
+test_*.py
+check_analysis.py
+report.py
+parse_chat.py
+*.pyc
+
+# 运行时数据（包含用户求职数据，不公开）
+data/applications.json
+data/jd_analysis_result.json
+data/jd_analysis.json
+data/monitor_sent.json
+data/resume_template.json
+data/jobs.json
+data/jobs_backup.json
+data/chat_page.html
+data/chat_wrap.html
+data/*.png
+data/*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db

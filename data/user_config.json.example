@@ -1,0 +1,36 @@
+{
+  "user": {
+    "name": "你的姓名",
+    "phone": "手机号",
+    "email": "邮箱",
+    "resume_path": "data/resumes/我的简历.pdf",
+    "target_positions": ["产品经理", "B端产品经理", "AI产品经理"],
+    "target_cities": ["武汉"],
+    "home_location": "你的家庭住址（用于计算通勤时间）",
+    "commute_preference": "通勤偏好说明",
+    "experience_years": 10,
+    "work_summary": "一句话介绍你的职业背景",
+    "key_skills": ["技能1", "技能2", "技能3"]
+  },
+  "ai": {
+    "provider": "minimax_native",
+    "model": "MiniMax-M2.7",
+    "api_key": "填入你的AI API Key",
+    "base_url": "https://api.minimax.chat/v1/text"
+  },
+  "browser": {
+    "headless": false,
+    "timeout": 30,
+    "user_data_dir": "./data/browser_profile"
+  },
+  "search": {
+    "pages": 2,
+    "days_filter": 0
+  },
+  "delivery": {
+    "min_match_score": 50,
+    "min_salary_k": 12,
+    "max_daily": 100,
+    "delay_seconds": 5
+  }
+}
