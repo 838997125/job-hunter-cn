@@ -5,6 +5,7 @@
 """
 
 import json
+import os
 import requests
 from pathlib import Path
 from datetime import datetime
@@ -13,7 +14,7 @@ import subprocess
 import sys
 
 # ============ 配置 ============
-API_KEY = "<DASHSCOPE_API_KEY>"
+API_KEY = os.environ.get("DASHSCOPE_API_KEY", "your-api-key")  # 从环境变量读取，勿提交真实 key
 BASE_URL = "https://coding.dashscope.aliyuncs.com/v1"
 MODEL = "qwen3.5-plus"
 
